@@ -4,7 +4,7 @@
  * Description:   Read the <a href="https://wordpress.org/plugins/wp-phpmyadmin-extension/">official readme</a> of this plugin.
  * Text Domain:   wp-phpmyadmin-extension
  * Domain Path:   /languages
- * Version:       5.2.1.13
+ * Version:       5.2.2.01
  * WordPress URI: https://wordpress.org/plugins/wp-phpmyadmin-extension/
  * Plugin URI:    https://puvox.software/software/wordpress-plugins/?plugin=wp-phpmyadmin-extension
  * Contributors:  puvoxsoftware,ttodua
@@ -122,7 +122,7 @@ namespace WpPhpMyAdminExtension
         $this->path_to_pma_common    = $this->pma_abspath    . '/libraries/classes/Common.php';
         $this->path_to_def_common    = __DIR__ . '/default_common_inc_code.php';
         //deleted targets //details: https://goo.gl/tCWdEv
-        $this->pma_delete_dirs       = [ '/js/src', '/vendor/tecnickcom/tcpdf', '/locale', '/themes/original', '/themes/bootstrap', '/themes/metro', '/doc', '/setup', '/examples', '/install', '/js/vendor/openlayers', '/vendor/phpmyadmin/sql-parser/locale'];      //
+        $this->pma_delete_dirs       = [ '/js/src', '/vendor/tecnickcom/tcpdf', '/locale', '/themes/original', '/themes/bootstrap', '/themes/metro', '/doc', '/setup', '/examples', '/install', '/js/vendor/openlayers', '/vendor/phpmyadmin/sql-parser/locale', 'js/vendor/openlayers/OpenLayers.js.map'];      //
         $this->pma_delete_files      = ['/ChangeLog', '/composer.lock', '/yarn.lock'];    
         $this->pma_create_files      = ['/vendor/tecnickcom/tcpdf/tcpdf.php'];    
         $this->conflict_file_1       = $this->pma_abspath . '/vendor/phpmyadmin/motranslator/src/functions.php';
